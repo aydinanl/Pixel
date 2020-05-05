@@ -96,11 +96,11 @@ final class RootControl : RootControlBase {
       filtersButton.tintColor = .clear
       editButton.tintColor = .clear
 
-      filtersButton.setTitleColor(UIColor.black.withAlphaComponent(0.5), for: .normal)
-      editButton.setTitleColor(UIColor.black.withAlphaComponent(0.5), for: .normal)
+      filtersButton.setTitleColor(Style.default.textColor.withAlphaComponent(0.5), for: .normal)
+      editButton.setTitleColor(Style.default.textColor.withAlphaComponent(0.5), for: .normal)
 
-      filtersButton.setTitleColor(.black, for: .selected)
-      editButton.setTitleColor(.black, for: .selected)
+      filtersButton.setTitleColor(Style.default.textColor, for: .selected)
+      editButton.setTitleColor(Style.default.textColor, for: .selected)
 
       filtersButton.titleLabel!.font = UIFont.boldSystemFont(ofSize: 17)
       editButton.titleLabel!.font = UIFont.boldSystemFont(ofSize: 17)

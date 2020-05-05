@@ -48,7 +48,7 @@ final class BlurredMosaicView : DryDrawingView {
   private let imageView = UIImageView()
   private let blurrSizeSlider = UISlider()
 
-  var brush: OvalBrush = OvalBrush(color: UIColor.black, width: 30)
+  var brush: OvalBrush = OvalBrush(color: Style.default.textColor, width: 30)
 
   private let maskLayer = MaskLayer()
 

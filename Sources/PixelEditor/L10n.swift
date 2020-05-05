@@ -44,6 +44,7 @@ public struct L10nStorage {
   public var editFade = "Fade"
   public var editClarity = "Clarity"
   public var editSharpen = "Sharpen"
+  public var editVibrance = "Vibrance"
   public var brushSizeSmall = "◦"
   public var brushSizeLarge = "◯"
   public var clear = "Clear"

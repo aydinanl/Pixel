@@ -36,7 +36,7 @@ public struct Style {
 
   public var control = Control()
   
-  public var black = UIColor(white: 0.05, alpha: 1)
+  public var textColor = UIColor(white: 0.05, alpha: 1)
 
   public init() {
 

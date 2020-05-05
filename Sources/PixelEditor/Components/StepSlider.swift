@@ -324,12 +324,12 @@ private final class _StepSlider: UISlider {
     minimumTrackTintColor = UIColor.clear
     maximumTrackTintColor = UIColor.clear
     setThumbImage(UIImage(named: "slider_thumb", in: bundle, compatibleWith: nil), for: [])
-    tintColor = Style.default.black
+    tintColor = Style.default.textColor
 
     let label = stepLabel
     label.backgroundColor = UIColor.clear
     label.font = UIFont.monospacedDigitSystemFont(ofSize: 12, weight: .medium)
-    label.textColor = UIColor.black
+    label.textColor = Style.default.textColor
     label.textAlignment = .center
 
     self.addSubview(label)

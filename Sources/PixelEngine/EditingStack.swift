@@ -355,6 +355,8 @@ extension EditingStack {
       
       public var vignette: FilterVignette?
       public var fade: FilterFade?
+      
+      public var vibrance: FilterVibrance?
 
       func makeFilters() -> [Filtering] {
         return ([
@@ -375,6 +377,7 @@ extension EditingStack {
           gaussianBlur,
           fade,
           vignette,
+          vibrance,
           ] as [Optional<Filtering>])
           .compactMap { $0 }
       }

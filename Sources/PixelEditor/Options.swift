@@ -49,6 +49,7 @@ extension Options {
       public var fadeControl: FadeControlBase.Type = FadeControl.self
       public var clarityControl: ClarityControlBase.Type = ClarityControl.self
       public var sharpenControl: SharpenControlBase.Type = SharpenControl.self
+      public var vibranceControl: VibranceControlBase.Type = VibranceControl.self
       
       public var ignoredEditMenu: [EditMenu] = []
       

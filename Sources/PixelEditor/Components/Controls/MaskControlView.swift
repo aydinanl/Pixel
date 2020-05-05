@@ -90,8 +90,8 @@ open class MaskControl : MaskControlBase {
       slider.translatesAutoresizingMaskIntoConstraints = false
 
       smallLabel.text = L10n.brushSizeSmall
-      smallLabel.textColor = .black
-      largeLabel.textColor = .black
+      smallLabel.textColor = Style.default.textColor
+      largeLabel.textColor = Style.default.textColor
       largeLabel.text = L10n.brushSizeLarge
 
       smallLabel.setContentHuggingPriority(.defaultLow, for: .horizontal)
@@ -120,7 +120,7 @@ open class MaskControl : MaskControlBase {
       sizeIndicator.layer.cornerRadius = 50 / 2
       sizeIndicator.clipsToBounds = false
       sizeIndicator.backgroundColor = .white
-      sizeIndicator.layer.borderColor = UIColor.black.cgColor
+      sizeIndicator.layer.borderColor = Style.default.textColor.cgColor
       sizeIndicator.layer.borderWidth = 1
       NSLayoutConstraint.activate([
         sizeIndicator.widthAnchor.constraint(equalToConstant: 50),

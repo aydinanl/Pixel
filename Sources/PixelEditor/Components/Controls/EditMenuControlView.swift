@@ -44,6 +44,7 @@ public enum EditMenu: CaseIterable {
   case vignette
   case sharpen
   case gaussianBlur
+  case vibrance
   
   open class EditMenuControl : EditMenuControlBase {
     
@@ -128,6 +129,14 @@ public enum EditMenu: CaseIterable {
       button.addTarget(self, action: #selector(clarity), for: .touchUpInside)
       return button
     }()
+    
+    
+    public lazy var vibranceButton: ButtonView = {
+      let button = ButtonView(name: L10n.editVibrance, image: UIImage(named: "structure", in: bundle, compatibleWith: nil)!)
+      button.addTarget(self, action: #selector(vibrance), for: .touchUpInside)
+      return button
+    }()
+    
     
     open override func setup() {
       
@@ -223,6 +232,8 @@ public enum EditMenu: CaseIterable {
             buttons.append(sharpenButton)
           case .clarity:
             buttons.append(clarityButton)
+          case .vibrance:
+            buttons.append(vibranceButton)
           }
         }
         
@@ -261,6 +272,7 @@ public enum EditMenu: CaseIterable {
       fadeButton.hasChanges = edit.filters.fade != nil
       sharpenButton.hasChanges = edit.filters.sharpen != nil
       clarityButton.hasChanges = edit.filters.unsharpMask != nil
+      vibranceButton.hasChanges = edit.filters.vibrance != nil
       
     }
     
@@ -342,6 +354,12 @@ public enum EditMenu: CaseIterable {
       push(context.options.classes.control.sharpenControl.init(context: context), animated: true)
     }
     
+    @objc
+    private func vibrance() {
+      push(context.options.classes.control.vibranceControl.init(context: context), animated: true)
+    }
+    
+    
     open class ButtonView : UIControl {
       
       public let nameLabel = UILabel()
@@ -397,13 +415,13 @@ public enum EditMenu: CaseIterable {
         style: do {
           
           imageView.contentMode = .scaleAspectFill
-          imageView.tintColor = Style.default.black
+          imageView.tintColor = Style.default.textColor
           nameLabel.font = UIFont.systemFont(ofSize: 12, weight: .medium)
-          nameLabel.textColor = Style.default.black
+          nameLabel.textColor = Style.default.textColor
           nameLabel.textAlignment = .center
           
           changesMarkView.layer.cornerRadius = 2
-          changesMarkView.backgroundColor = Style.default.black
+          changesMarkView.backgroundColor = Style.default.textColor
           changesMarkView.isHidden = true
           
         }
