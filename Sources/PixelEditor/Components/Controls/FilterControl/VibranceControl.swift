@@ -60,10 +60,10 @@ open class VibranceControl : VibranceControlBase {
   @objc
   private func valueChanged() {
     
-    let value = slider.transition(in: FilterSharpen.Params.sharpness)
+    let value = slider.transition(in: FilterVibrance.Params.vibrance)
     
     guard value != 0 else {
-      context.action(.setFilter({ $0.sharpen = nil }))
+      context.action(.setFilter({ $0.vibrance = nil }))
       return
     }
     
