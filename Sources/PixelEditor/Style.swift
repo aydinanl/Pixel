@@ -23,7 +23,7 @@ import Foundation
 
 public struct Style {
 
-  public static let `default` = Style()
+  public static var `default` = Style()
 
   public struct Control {
 
