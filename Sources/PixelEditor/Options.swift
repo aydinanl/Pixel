@@ -51,6 +51,7 @@ extension Options {
       public var sharpenControl: SharpenControlBase.Type = SharpenControl.self
       public var vibranceControl: VibranceControlBase.Type = VibranceControl.self
       public var noiseReductionControl: NoiseReductionControl.Type = NoiseReductionControl.self
+      public var tintControl: TintControl.Type = TintControl.self
       
       public var ignoredEditMenu: [EditMenu] = []
       

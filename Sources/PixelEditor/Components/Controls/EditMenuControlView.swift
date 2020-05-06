@@ -46,6 +46,7 @@ public enum EditMenu: CaseIterable {
   case gaussianBlur
   case vibrance
   case noiseReduction
+  case tint
   
   open class EditMenuControl : EditMenuControlBase {
     
@@ -142,6 +143,13 @@ public enum EditMenu: CaseIterable {
     public lazy var noiseReductionButton: ButtonView = {
       let button = ButtonView(name: L10n.editNoiseReduction, image: UIImage(named: "structure", in: bundle, compatibleWith: nil)!)
       button.addTarget(self, action: #selector(noiseReduction), for: .touchUpInside)
+      return button
+    }()
+    
+    
+    public lazy var tintButton: ButtonView = {
+      let button = ButtonView(name: L10n.editTint, image: UIImage(named: "structure", in: bundle, compatibleWith: nil)!)
+      button.addTarget(self, action: #selector(tint), for: .touchUpInside)
       return button
     }()
     
@@ -245,6 +253,8 @@ public enum EditMenu: CaseIterable {
             buttons.append(vibranceButton)
           case .noiseReduction:
             buttons.append(noiseReductionButton)
+          case .tint:
+            buttons.append(tintButton)
           }
         }
         
@@ -285,6 +295,7 @@ public enum EditMenu: CaseIterable {
       clarityButton.hasChanges = edit.filters.unsharpMask != nil
       vibranceButton.hasChanges = edit.filters.vibrance != nil
       noiseReductionButton.hasChanges = edit.filters.noiseReduction != nil
+      tintButton.hasChanges = edit.filters.tint != nil
       
     }
     
@@ -375,6 +386,12 @@ public enum EditMenu: CaseIterable {
     private func noiseReduction(){
       push(context.options.classes.control.noiseReductionControl.init(context: context), animated: true)
     }
+    
+    @objc
+    private func tint(){
+      push(context.options.classes.control.tintControl.init(context: context), animated: true)
+    }
+    
     
     
     open class ButtonView : UIControl {

@@ -13,12 +13,12 @@ import CoreImage
 public struct FilterNoiseReduction: Filtering, Equatable, Codable {
   
   public enum Params {
-    public static let noiseLevel: ParameterRange<Double, FilterNoiseReduction> = .init(min: 0, max: 100)
+    public static let noiseLevel: ParameterRange<Double, FilterNoiseReduction> = .init(min: 0, max: 0.08)
     public static let sharpness: ParameterRange<Double, FilterNoiseReduction> = .init(min: 0, max: 1)
   }
 
   public var sharpness: Double = 0
-  public var noiseLevel: Double = 10
+  public var noiseLevel: Double = 0.2
 
   public init() {
 
