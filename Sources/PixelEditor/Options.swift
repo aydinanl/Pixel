@@ -50,6 +50,7 @@ extension Options {
       public var clarityControl: ClarityControlBase.Type = ClarityControl.self
       public var sharpenControl: SharpenControlBase.Type = SharpenControl.self
       public var vibranceControl: VibranceControlBase.Type = VibranceControl.self
+      public var noiseReductionControl: NoiseReductionControl.Type = NoiseReductionControl.self
       
       public var ignoredEditMenu: [EditMenu] = []
       

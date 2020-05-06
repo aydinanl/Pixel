@@ -45,6 +45,7 @@ public enum EditMenu: CaseIterable {
   case sharpen
   case gaussianBlur
   case vibrance
+  case noiseReduction
   
   open class EditMenuControl : EditMenuControlBase {
     
@@ -136,6 +137,14 @@ public enum EditMenu: CaseIterable {
       button.addTarget(self, action: #selector(vibrance), for: .touchUpInside)
       return button
     }()
+    
+    
+    public lazy var noiseReductionButton: ButtonView = {
+      let button = ButtonView(name: L10n.editNoiseReduction, image: UIImage(named: "structure", in: bundle, compatibleWith: nil)!)
+      button.addTarget(self, action: #selector(noiseReduction), for: .touchUpInside)
+      return button
+    }()
+    
     
     
     open override func setup() {
@@ -234,6 +243,8 @@ public enum EditMenu: CaseIterable {
             buttons.append(clarityButton)
           case .vibrance:
             buttons.append(vibranceButton)
+          case .noiseReduction:
+            buttons.append(noiseReductionButton)
           }
         }
         
@@ -273,6 +284,7 @@ public enum EditMenu: CaseIterable {
       sharpenButton.hasChanges = edit.filters.sharpen != nil
       clarityButton.hasChanges = edit.filters.unsharpMask != nil
       vibranceButton.hasChanges = edit.filters.vibrance != nil
+      noiseReductionButton.hasChanges = edit.filters.noiseReduction != nil
       
     }
     
@@ -357,6 +369,11 @@ public enum EditMenu: CaseIterable {
     @objc
     private func vibrance() {
       push(context.options.classes.control.vibranceControl.init(context: context), animated: true)
+    }
+    
+    @objc
+    private func noiseReduction(){
+      push(context.options.classes.control.noiseReductionControl.init(context: context), animated: true)
     }
     
     
