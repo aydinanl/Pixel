@@ -11,7 +11,7 @@ import CoreImage
 
 public struct FilterTint: Filtering, Equatable, Codable {
 
-  public static let range: ParameterRange<Double, FilterTint> = .init(min: -3000, max: 3000)
+  public static let range: ParameterRange<Double, FilterTint> = .init(min: -900, max: 900)
 
   public var value: Double = 0
 
