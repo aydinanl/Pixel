@@ -18,7 +18,7 @@ public struct FilterNoiseReduction: Filtering, Equatable, Codable {
   }
 
   public var sharpness: Double = 0
-  public var noiseLevel: Double = 0
+  public var noiseLevel: Double = 10
 
   public init() {
 
