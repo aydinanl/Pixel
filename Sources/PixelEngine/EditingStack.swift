@@ -359,6 +359,7 @@ extension EditingStack {
       public var vibrance: FilterVibrance?
       public var noiseReduction: FilterNoiseReduction?
       public var tint: FilterTint?
+      public var hue:FilterHue?
 
       func makeFilters() -> [Filtering] {
         return ([

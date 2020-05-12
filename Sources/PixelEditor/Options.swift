@@ -52,6 +52,7 @@ extension Options {
       public var vibranceControl: VibranceControlBase.Type = VibranceControl.self
       public var noiseReductionControl: NoiseReductionControl.Type = NoiseReductionControl.self
       public var tintControl: TintControl.Type = TintControl.self
+      public var hueControl: HueControl.Type = HueControl.self
       
       public var ignoredEditMenu: [EditMenu] = []
       
