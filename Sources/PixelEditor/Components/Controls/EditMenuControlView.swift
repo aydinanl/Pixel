@@ -47,7 +47,7 @@ public enum EditMenu: CaseIterable {
   case vibrance
   case noiseReduction
   case tint
-  case hue
+  case color
   
   open class EditMenuControl : EditMenuControlBase {
     
@@ -156,12 +156,13 @@ public enum EditMenu: CaseIterable {
     
     
     
-    public lazy var hueButton: ButtonView = {
-      let button = ButtonView(name: L10n.editHue, image: UIImage(named: "structure", in: bundle, compatibleWith: nil)!)
-      button.addTarget(self, action: #selector(hue), for: .touchUpInside)
-      return button
-    }()
     
+    public lazy var colorButton: ButtonView = {
+       let button = ButtonView(name: L10n.editHue, image: UIImage(named: "structure", in: bundle, compatibleWith: nil)!)
+       button.addTarget(self, action: #selector(colorHue), for: .touchUpInside)
+       return button
+     }()
+
     
     
     
@@ -265,8 +266,8 @@ public enum EditMenu: CaseIterable {
             buttons.append(noiseReductionButton)
           case .tint:
             buttons.append(tintButton)
-          case .hue:
-            buttons.append(hueButton)
+          case .color:
+            buttons.append(colorButton)
           }
         }
         
@@ -308,7 +309,7 @@ public enum EditMenu: CaseIterable {
       vibranceButton.hasChanges = edit.filters.vibrance != nil
       noiseReductionButton.hasChanges = edit.filters.noiseReduction != nil
       tintButton.hasChanges = edit.filters.tint != nil
-      hueButton.hasChanges = edit.filters.hue != nil
+      colorButton.hasChanges = edit.filters.color != nil
       
     }
     
@@ -406,8 +407,8 @@ public enum EditMenu: CaseIterable {
     }
     
     @objc
-    private func hue(){
-      push(context.options.classes.control.hueControl.init(context: context), animated: true)
+    private func colorHue(){
+      push(context.options.classes.control.colorControl.init(context: context), animated: true)
     }
     
     

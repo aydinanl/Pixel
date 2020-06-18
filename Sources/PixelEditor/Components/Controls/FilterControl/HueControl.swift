@@ -54,14 +54,14 @@ open class HueControl : HueControlBase {
   
   open override func didReceiveCurrentEdit(_ edit: EditingStack.Edit) {
     
-    slider.set(value: edit.filters.hue?.value ?? 0, in: FilterHue.range)
+    slider.set(value: edit.filters.hue?.value ?? 0, in: FilterHue.Params.range)
     
   }
   
   @objc
   private func valueChanged() {
     
-    let value = slider.transition(in: FilterHue.range)
+    let value = slider.transition(in: FilterHue.Params.range)
     
     guard value != 0 else {
       context.action(.setFilter({ $0.hue = nil }))

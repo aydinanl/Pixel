@@ -242,7 +242,8 @@ public final class PixelEditViewController : UIViewController {
           guide.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor),
           guide.rightAnchor.constraint(equalTo: view.rightAnchor),
           guide.leftAnchor.constraint(equalTo: view.leftAnchor),
-          guide.widthAnchor.constraint(equalTo: guide.heightAnchor, multiplier: 1),
+          guide.widthAnchor.constraint(equalTo: guide.widthAnchor),
+          guide.heightAnchor.constraint(equalToConstant: view.frame.height/1.5),
 
           {
             let c = editContainerView.topAnchor.constraint(equalTo: guide.topAnchor)

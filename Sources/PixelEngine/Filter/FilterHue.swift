@@ -24,13 +24,13 @@ public struct FilterHue : Filtering, Equatable, Codable {
   public func apply(to image: CIImage, sourceImage: CIImage) -> CIImage {
     
     
-    let _value = RadiusCalculator.radius(value: value, max: FilterGaussianBlur.range.max, imageExtent: image.extent)
+    let _value = RadiusCalculator.radius(value: value, max: FilterHue.Params.range.max, imageExtent: image.extent)
 
     
     return image.applyingFilter("CIHueAdjust",
                parameters: [
-                 "inputImage" : image,
-                 "inputAngle" : _value
+                 kCIInputImageKey : image,
+                 kCIInputAngleKey : 1
                 ])
   }
   

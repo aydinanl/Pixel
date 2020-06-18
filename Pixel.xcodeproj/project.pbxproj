@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		27D530D48A4C829D53E9C773 /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B38E5B35129587C07BF56E1 /* Pods_Demo.framework */; };
+		143F425C35C2D70BE65A6BA9 /* libPods-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8887B28DB9AD1ACA8BAC6FA3 /* libPods-Demo.a */; };
 		4B0077C021704E7F008330EA /* MaskControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0077BF21704E7F008330EA /* MaskControlView.swift */; };
 		4B01137E216FBA5C00CF09F6 /* DryDrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B01137D216FBA5C00CF09F6 /* DryDrawingView.swift */; };
 		4B011380216FBAA200CF09F6 /* BlurredMosaicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B01137F216FBAA200CF09F6 /* BlurredMosaicView.swift */; };
@@ -114,6 +114,11 @@
 		4BEE65112174DC3800F3578E /* EditorLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEE65102174DC3800F3578E /* EditorLog.swift */; };
 		4BEE65132174E99600F3578E /* EngineLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEE65122174E99600F3578E /* EngineLog.swift */; };
 		4BEE65152174EB5800F3578E /* DrawnPathInRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEE65142174EB5800F3578E /* DrawnPathInRect.swift */; };
+		5B94ECD7246AC52600883F1E /* ColorSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B94ECD6246AC52600883F1E /* ColorSelect.swift */; };
+		5B94ECDA246AC58E00883F1E /* ColorControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B94ECD8246AC56E00883F1E /* ColorControl.swift */; };
+		5B94ECDD246AC68400883F1E /* ColorHighlightsControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B94ECDB246AC66300883F1E /* ColorHighlightsControl.swift */; };
+		5B94ECE2246AC6A900883F1E /* UIColor+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B94ECE0246AC6A900883F1E /* UIColor+Extentions.swift */; };
+		5B94ECE5246AC6E900883F1E /* ColorShadowControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B94ECE3246AC6E300883F1E /* ColorShadowControl.swift */; };
 		5BF8C4D8246A7D68007D57A2 /* FilterHue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF8C4D7246A7D68007D57A2 /* FilterHue.swift */; };
 		5BF8C4DB246A7F84007D57A2 /* HueControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF8C4D9246A7F75007D57A2 /* HueControl.swift */; };
 		5BFB42C02461984C008BCB4D /* FilterVibrance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFB42BF2461984C008BCB4D /* FilterVibrance.swift */; };
@@ -122,7 +127,7 @@
 		5BFB42CF2462AC01008BCB4D /* NoiseReductionControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFB42CD2462ABB1008BCB4D /* NoiseReductionControl.swift */; };
 		5BFB42D72462F5A6008BCB4D /* FilterTint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFB42D62462F5A6008BCB4D /* FilterTint.swift */; };
 		5BFB42DC2462F643008BCB4D /* TintControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFB42D82462F600008BCB4D /* TintControl.swift */; };
-		5FEA3663DD99BD359BFF0ED4 /* Pods_PixelEditor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77AF225663E1B55649C3398D /* Pods_PixelEditor.framework */; };
+		8849F269BF4194F493EF2C53 /* libPods-PixelEditor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FFAE75CFD43B6660D6F2F3B /* libPods-PixelEditor.a */; };
 		FC5DAE6E23A75ACB00DD51E6 /* PHAssetDownloadEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5DAE6C23A75A8A00DD51E6 /* PHAssetDownloadEditorViewController.swift */; };
 		FCC7962623C58209009ACD8A /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC7962523C58209009ACD8A /* LoadingView.swift */; };
 /* End PBXBuildFile section */
@@ -275,6 +280,11 @@
 		4BEE65122174E99600F3578E /* EngineLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineLog.swift; sourceTree = "<group>"; };
 		4BEE65142174EB5800F3578E /* DrawnPathInRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawnPathInRect.swift; sourceTree = "<group>"; };
 		58002AF806D93AB53E224855 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
+		5B94ECD6246AC52600883F1E /* ColorSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSelect.swift; sourceTree = "<group>"; };
+		5B94ECD8246AC56E00883F1E /* ColorControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorControl.swift; sourceTree = "<group>"; };
+		5B94ECDB246AC66300883F1E /* ColorHighlightsControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHighlightsControl.swift; sourceTree = "<group>"; };
+		5B94ECE0246AC6A900883F1E /* UIColor+Extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extentions.swift"; sourceTree = "<group>"; };
+		5B94ECE3246AC6E300883F1E /* ColorShadowControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorShadowControl.swift; sourceTree = "<group>"; };
 		5BF8C4D7246A7D68007D57A2 /* FilterHue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterHue.swift; sourceTree = "<group>"; };
 		5BF8C4D9246A7F75007D57A2 /* HueControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HueControl.swift; sourceTree = "<group>"; };
 		5BFB42BF2461984C008BCB4D /* FilterVibrance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterVibrance.swift; sourceTree = "<group>"; };
@@ -283,9 +293,9 @@
 		5BFB42CD2462ABB1008BCB4D /* NoiseReductionControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseReductionControl.swift; sourceTree = "<group>"; };
 		5BFB42D62462F5A6008BCB4D /* FilterTint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTint.swift; sourceTree = "<group>"; };
 		5BFB42D82462F600008BCB4D /* TintControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TintControl.swift; sourceTree = "<group>"; };
-		77AF225663E1B55649C3398D /* Pods_PixelEditor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PixelEditor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8887B28DB9AD1ACA8BAC6FA3 /* libPods-Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FFAE75CFD43B6660D6F2F3B /* libPods-PixelEditor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PixelEditor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98AC6E4BEF28CC71031BF300 /* Pods-PixelEditor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PixelEditor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PixelEditor/Pods-PixelEditor.debug.xcconfig"; sourceTree = "<group>"; };
-		9B38E5B35129587C07BF56E1 /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D063024D47BA1B6BB7890F47 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		FC5DAE6C23A75A8A00DD51E6 /* PHAssetDownloadEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHAssetDownloadEditorViewController.swift; sourceTree = "<group>"; };
 		FCC7962523C58209009ACD8A /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
@@ -297,7 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B47D064216CC5640007B594 /* PixelEngine.framework in Frameworks */,
-				5FEA3663DD99BD359BFF0ED4 /* Pods_PixelEditor.framework in Frameworks */,
+				8849F269BF4194F493EF2C53 /* libPods-PixelEditor.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,7 +328,7 @@
 			files = (
 				4B47D059216CC5350007B594 /* PixelEditor.framework in Frameworks */,
 				4B600B32216B7CB4001E1456 /* PixelEngine.framework in Frameworks */,
-				27D530D48A4C829D53E9C773 /* Pods_Demo.framework in Frameworks */,
+				143F425C35C2D70BE65A6BA9 /* libPods-Demo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +393,7 @@
 				5BFB42CD2462ABB1008BCB4D /* NoiseReductionControl.swift */,
 				5BFB42D82462F600008BCB4D /* TintControl.swift */,
 				5BF8C4D9246A7F75007D57A2 /* HueControl.swift */,
+				5B94ECDB246AC66300883F1E /* ColorHighlightsControl.swift */,
 			);
 			path = FilterControl;
 			sourceTree = "<group>";
@@ -426,7 +437,9 @@
 				4B9D4568216DD59D003A240A /* AdjustmentControlView.swift */,
 				4B0077BF21704E7F008330EA /* MaskControlView.swift */,
 				4B9D457D216EE1AF003A240A /* DoodleControlView.swift */,
+				5B94ECD8246AC56E00883F1E /* ColorControl.swift */,
 				4B1E95212176CBD100E9DFB8 /* FilterControl */,
+				5B94ECE3246AC6E300883F1E /* ColorShadowControl.swift */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -475,6 +488,7 @@
 		4B600AFF216B7A94001E1456 /* PixelEngine */ = {
 			isa = PBXGroup;
 			children = (
+				5B94ECDF246AC6A900883F1E /* Utils */,
 				4B6A5F5C217B9125004D68DC /* Resource */,
 				4B1E94B4217632B300E9DFB8 /* Filter */,
 				4B66C9732171D781008F2A54 /* ImageSource.swift */,
@@ -540,8 +554,8 @@
 				4B600B3C216B7CE3001E1456 /* Foundation.framework */,
 				4B600B3A216B7CDD001E1456 /* AVFoundation.framework */,
 				4B600B38216B7CD6001E1456 /* CoreImage.framework */,
-				9B38E5B35129587C07BF56E1 /* Pods_Demo.framework */,
-				77AF225663E1B55649C3398D /* Pods_PixelEditor.framework */,
+				8887B28DB9AD1ACA8BAC6FA3 /* libPods-Demo.a */,
+				8FFAE75CFD43B6660D6F2F3B /* libPods-PixelEditor.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -583,6 +597,7 @@
 				4B01137D216FBA5C00CF09F6 /* DryDrawingView.swift */,
 				FCC7962523C58209009ACD8A /* LoadingView.swift */,
 				4B3457892174FF8600716DA0 /* Controls */,
+				5B94ECD6246AC52600883F1E /* ColorSelect.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -591,6 +606,14 @@
 			isa = PBXGroup;
 			children = (
 				4BEE65102174DC3800F3578E /* EditorLog.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5B94ECDF246AC6A900883F1E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5B94ECE0246AC6A900883F1E /* UIColor+Extentions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -867,9 +890,11 @@
 				4B42A6AF2178E14E00F18208 /* HighlightsControl.swift in Sources */,
 				4B1E951C21764DE700E9DFB8 /* GaussianBlurControl.swift in Sources */,
 				4B1E94B12175FB5800E9DFB8 /* StepSlider.swift in Sources */,
+				5B94ECDD246AC68400883F1E /* ColorHighlightsControl.swift in Sources */,
 				4B9D4565216DD1E0003A240A /* RootControlView.swift in Sources */,
 				4B9D4563216DD143003A240A /* ControlStackView.swift in Sources */,
 				4BEE65112174DC3800F3578E /* EditorLog.swift in Sources */,
+				5B94ECDA246AC58E00883F1E /* ColorControl.swift in Sources */,
 				4B011380216FBAA200CF09F6 /* BlurredMosaicView.swift in Sources */,
 				5BFB42C424619A54008BCB4D /* VibranceControl.swift in Sources */,
 				4B0BDC9F217D6567001098B9 /* FadeControl.swift in Sources */,
@@ -877,6 +902,7 @@
 				4B9D457E216EE1AF003A240A /* DoodleControlView.swift in Sources */,
 				4BEE650F21749E7A00F3578E /* ImageScrollView.swift in Sources */,
 				4B0077C021704E7F008330EA /* MaskControlView.swift in Sources */,
+				5B94ECE5246AC6E900883F1E /* ColorShadowControl.swift in Sources */,
 				4B42A6A92178E12500F18208 /* ContrastControl.swift in Sources */,
 				4B9D4580216EE1BC003A240A /* ControlViewBase.swift in Sources */,
 			);
@@ -889,6 +915,7 @@
 				4B04B3F22177BC660032356A /* FilterSharpen.swift in Sources */,
 				4BA8E738217C69DE00940518 /* FilterFade.swift in Sources */,
 				4BA0B1532180218C00CDA871 /* ColorCubeStorage.swift in Sources */,
+				5B94ECD7246AC52600883F1E /* ColorSelect.swift in Sources */,
 				4B6A5F592179BC86004D68DC /* FilterUnsharpMask.swift in Sources */,
 				4B9B02E9216BBA8A001593B9 /* Filtering.swift in Sources */,
 				4B1E95232176CF1400E9DFB8 /* FilterVignette.swift in Sources */,
@@ -910,6 +937,7 @@
 				4BEE650B217479C600F3578E /* BlurredMask.swift in Sources */,
 				4BEE65152174EB5800F3578E /* DrawnPathInRect.swift in Sources */,
 				4B01C55F217F6CD800C50EDE /* FilterExposure.swift in Sources */,
+				5B94ECE2246AC6A900883F1E /* UIColor+Extentions.swift in Sources */,
 				4B04B3ED2177B0470032356A /* FilterContrast.swift in Sources */,
 				4B1E952B2176F57800E9DFB8 /* ColorCube.swift in Sources */,
 				4B66C9742171D781008F2A54 /* ImageSource.swift in Sources */,
@@ -1162,10 +1190,10 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4SREC8ZH83;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1189,10 +1217,10 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4SREC8ZH83;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1217,13 +1245,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9ZTA5QN97Z;
+				DEVELOPMENT_TEAM = 4SREC8ZH83;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.PixelEditorDemo15;
+				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.PixelEditorDemo15Batu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1236,13 +1264,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9ZTA5QN97Z;
+				DEVELOPMENT_TEAM = 4SREC8ZH83;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.PixelEditorDemo15;
+				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.PixelEditorDemo15Batu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

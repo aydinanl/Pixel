@@ -360,6 +360,8 @@ extension EditingStack {
       public var noiseReduction: FilterNoiseReduction?
       public var tint: FilterTint?
       public var hue:FilterHue?
+      
+      public var color:FilterHighlightShadowTint?
 
       func makeFilters() -> [Filtering] {
         return ([
@@ -383,6 +385,7 @@ extension EditingStack {
           vibrance,
           noiseReduction,
           tint,
+          color,
           ] as [Optional<Filtering>])
           .compactMap { $0 }
       }
