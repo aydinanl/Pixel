@@ -119,6 +119,7 @@
 		5B94ECDD246AC68400883F1E /* ColorHighlightsControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B94ECDB246AC66300883F1E /* ColorHighlightsControl.swift */; };
 		5B94ECE2246AC6A900883F1E /* UIColor+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B94ECE0246AC6A900883F1E /* UIColor+Extentions.swift */; };
 		5B94ECE5246AC6E900883F1E /* ColorShadowControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B94ECE3246AC6E300883F1E /* ColorShadowControl.swift */; };
+		5BE0068524A1F9AB003D0750 /* NewFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE0068324A1F97A003D0750 /* NewFilterView.swift */; };
 		5BF8C4D8246A7D68007D57A2 /* FilterHue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF8C4D7246A7D68007D57A2 /* FilterHue.swift */; };
 		5BF8C4DB246A7F84007D57A2 /* HueControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF8C4D9246A7F75007D57A2 /* HueControl.swift */; };
 		5BFB42C02461984C008BCB4D /* FilterVibrance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFB42BF2461984C008BCB4D /* FilterVibrance.swift */; };
@@ -285,6 +286,7 @@
 		5B94ECDB246AC66300883F1E /* ColorHighlightsControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHighlightsControl.swift; sourceTree = "<group>"; };
 		5B94ECE0246AC6A900883F1E /* UIColor+Extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extentions.swift"; sourceTree = "<group>"; };
 		5B94ECE3246AC6E300883F1E /* ColorShadowControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorShadowControl.swift; sourceTree = "<group>"; };
+		5BE0068324A1F97A003D0750 /* NewFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFilterView.swift; sourceTree = "<group>"; };
 		5BF8C4D7246A7D68007D57A2 /* FilterHue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterHue.swift; sourceTree = "<group>"; };
 		5BF8C4D9246A7F75007D57A2 /* HueControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HueControl.swift; sourceTree = "<group>"; };
 		5BFB42BF2461984C008BCB4D /* FilterVibrance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterVibrance.swift; sourceTree = "<group>"; };
@@ -440,6 +442,7 @@
 				5B94ECD8246AC56E00883F1E /* ColorControl.swift */,
 				4B1E95212176CBD100E9DFB8 /* FilterControl */,
 				5B94ECE3246AC6E300883F1E /* ColorShadowControl.swift */,
+				5BE0068324A1F97A003D0750 /* NewFilterView.swift */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -867,6 +870,7 @@
 				5BFB42CF2462AC01008BCB4D /* NoiseReductionControl.swift in Sources */,
 				4B1E95202176567300E9DFB8 /* FilterControlBase.swift in Sources */,
 				4BA8E73D217C716700940518 /* Options.swift in Sources */,
+				5BE0068524A1F9AB003D0750 /* NewFilterView.swift in Sources */,
 				4B0BDCA5217D979D001098B9 /* L10n.swift in Sources */,
 				5BFB42DC2462F643008BCB4D /* TintControl.swift in Sources */,
 				4B0BDCA3217D676D001098B9 /* SharpenControl.swift in Sources */,

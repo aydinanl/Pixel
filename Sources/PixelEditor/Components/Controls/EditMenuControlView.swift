@@ -28,6 +28,9 @@ open class EditMenuControlBase : ControlBase {
   public required override init(context: PixelEditContext) {
     super.init(context: context)
   }
+  public required init(context: PixelEditContext, colorCubeControl: ColorCubeControlBase) {
+    super.init(context: context)
+  }
 }
 
 public enum EditMenu: CaseIterable {
@@ -48,12 +51,28 @@ public enum EditMenu: CaseIterable {
   case noiseReduction
   case tint
   case color
+  case filters
   
   open class EditMenuControl : EditMenuControlBase {
     
     public let contentView = UIView()
     public let itemsView = UIStackView()
     public let scrollView = UIScrollView()
+    
+
+    public var colorCubeControl: ColorCubeControlBase
+    
+    public required init(context: PixelEditContext, colorCubeControl: ColorCubeControlBase) {
+      self.colorCubeControl = colorCubeControl
+      
+      super.init(context: context, colorCubeControl: colorCubeControl)
+
+    }
+    
+    public required override init(context: PixelEditContext) {
+      fatalError("init(context:) has not been implemented")
+    }
+    
     
     public lazy var adjustmentButton: ButtonView = {
       let button = ButtonView(name: L10n.editAdjustment, image: UIImage(named: "adjustment", in: bundle, compatibleWith: nil)!)
@@ -165,6 +184,12 @@ public enum EditMenu: CaseIterable {
 
     
     
+    public lazy var filterButton: ButtonView = {
+      let button = ButtonView(name: L10n.filter, image: UIImage(named: "structure", in: bundle, compatibleWith: nil)!)
+       button.addTarget(self, action: #selector(filter), for: .touchUpInside)
+       return button
+     }()
+    
     
     open override func setup() {
       
@@ -268,6 +293,8 @@ public enum EditMenu: CaseIterable {
             buttons.append(tintButton)
           case .color:
             buttons.append(colorButton)
+          case .filters:
+            buttons.append(filterButton)
           }
         }
         
@@ -408,8 +435,18 @@ public enum EditMenu: CaseIterable {
     
     @objc
     private func colorHue(){
+      
       push(context.options.classes.control.colorControl.init(context: context), animated: true)
     }
+    
+    
+    @objc
+    private func filter(){
+//      let root = RootControl(context: context, colorCubeControl: colorCubeControl)
+//      root.displayType = .filter
+      push(NewFilterView(context: context, colorCubeControl: colorCubeControl), animated: true)
+    }
+    
     
     
     

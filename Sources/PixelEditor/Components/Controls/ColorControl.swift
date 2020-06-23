@@ -57,6 +57,8 @@ open class ColorControlView : ColorControlViewBase {
     highlightsColorControl = ColorHighlightsControl(context: context)
 
     navigationView.didTapCancelButton = { [weak self] in
+
+      self?.displayType = .shadows
       self?.context.action(.revert)
       self?.pop(animated: true)
     }
